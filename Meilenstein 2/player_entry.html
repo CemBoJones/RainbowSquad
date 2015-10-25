@@ -5,49 +5,52 @@
     <title></title>
 </head>
 <body>
-Name:
-<input type="text" size="30" maxlength="10" value="vorname"/>
-<p></p>
-Nachname:
-<input type="text" size="30" maxlength="10" value="name"/>
-<p></p>
-Verein:
-<input type="text" size="30" maxlength="10" value="verein"/>
-<p></p>
-Headcoach:
-<input type="text" size="30" maxlength="10" value="hcoach"/>
-<p></p>
-Assistant Coach:
-<input type="text" size="30" maxlength="10" value="acoach"/>
-<p></p>
-Aktiv:
-<br/>
-<input type="checkbox" name="Aktiv"
-       value="true" />Ja<br/>
-<input type="checkbox" name="Aktiv"
-       value="false" checked="checked" />Nein<br/>
-<p></p>
-Position:
-<select name ="position"size="1">
-    <option value="Center">Center</option>
-    <option value="Guard">Guard</option>
-    <option value="Power Forward">Power Forward</option>
-    <option value="Wing" selected="selected">Wing</option>
-    <option value="Small Forward">Small Forward</option>
-</select>
-<p></p>
-Rückennummer:
-<input type="text" size="30" maxlength="3" value="number"/>
-<p></p>
-Geburtsjahr:
-<input type="text" size="30" maxlength="10" value="jahr"/>
-<p></p>
-Favorit markieren:
-<br/>
-<input type="checkbox" name="favorit"
-       value="true" /><br/>
-<p></p>
-<input type="button" name="senden" value="Send"/>
+    <form action="http://martinakraus.net/createPlayer.php" method="get">
+        Vorname:<br>
+        <input type="text" name="vorname"><br>
+        
+        Nachname:<br>
+        <input type="text" name="name"><br>
+        
+        Verein:<br>
+        <input type="text" name="verein"><br>   
+        
+        Headcoach:<br>
+        <input type="text" name="hcoach"><br>   
+        
+        Assistant Coach:<br>
+        <input type="text" name="acoach"><br>
+        
+        Aktiv:<br>    
+                
+        <input type="checkbox" name="aktiv" value="ja">
+        Ja
+
+        <input type="checkbox" name="aktiv" value="nein" checked>
+        Nein<br>
+        
+        Position:<br>
+        <select name="position" size="1">
+            <option value="center">Center</option>
+            <option value="guard">Guard</option>
+            <option value="powerforward">Power Forward</option>
+            <option selected value="wing">Wing</option>
+            <option value="smallforward">Small Forward</option>
+        </select><br>
+        
+        Rückennummer:<br>
+        <input type="number" name="number"><br>
+        
+        Geburtsjahr<br>
+        <input type="number" name="jahr"><br>
+        
+        Favorit markieren<br>
+        <input type="checkbox" name="favorit"><br> 
+        
+        
+        <button name="Senden" type="submit">Senden</button>
+    </form>
+    
 
 </body>
 </html>
