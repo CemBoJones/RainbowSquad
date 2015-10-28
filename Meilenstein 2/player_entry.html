@@ -1,106 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
-    <title>Spieler anlegen</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title></title>
 </head>
-
 <body>
-    <div class="inhalt">
-        <h1>Spieler anlegen</h1>
-        <form action="http://martinakraus.net/createPlayer.php" method="get">
-            <table>
-                <tr>
-                    <td>
-                        <label for="vorname">Vorname</label>
-                    </td>
-                    <td>
-                        <input type="text" name="vorname">
-                    </td>
-                    <td>
-                        <label for="favorit">Als Favorit markieren</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="name">Nachname</label>
-                    </td>
-                    <td>
-                        <input type="text" name="name">
-                    </td>
-                    <td>
-                        <input type="checkbox" name="favorit">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="verein">Verein</label>
-                    </td>
-                    <td>
-                        <input type="text" name="verein">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="hcoach">Headcoach</label>
-                    </td>
-                    <td>
-                        <input type="text" name="hcoach">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="acoach">Assistant Coach</label>
-                    </td>
-                    <td>
-                        <input type="text" name="acoach">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="aktiv">Aktiv</label>
-                    </td>
-                    <td>
-                        <input type="checkbox" name="aktiv" value="ja"><label for="aktiv">Ja</label>
-                        <input type="checkbox" name="aktiv" value="nein" checked><label for="aktiv">Nein</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="position">Position</label>
-                    </td>
-                    <td>
-                        <select name="position" size="1">
-                            <option value="center">Center</option>
-                            <option value="guard">Guard</option>
-                            <option value="powerforward">Power Forward</option>
-                            <option selected value="wing">Wing</option>
-                            <option value="smallforward">Small Forward</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="number">Rückennummer</label>
-                    </td>
-                    <td>
-                        <input type="number" name="number">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="jahr">Geburtsjahr</label>
-                    </td>
-                    <td>
-                        <input type="number" name="jahr">
-                    </td>
-                </tr>
-            </table>
-            <button name="Senden" type="submit">Senden</button>
-        </form>
-    </div>
-</body>
+    <form action="http://martinakraus.net/createPlayer.php" method="get">
+        Vorname
+        <input type="text" name="vorname"><br>
+        
+        Nachname
+        <input type="text" name="name"><br>
+        
+        Verein
+        <input type="text" name="verein"><br>   
+        
+        Headcoach
+        <input type="text" name="hcoach"><br>   
+        
+        Assistant Coach
+        <input type="text" name="acoach"><br>
+        
+        Aktiv    
+                
+        <input type="checkbox" name="aktiv" value="ja">
+        Ja
 
+        <input type="checkbox" name="aktiv" value="nein" checked>
+        Nein<br>
+        
+        Position
+        <select name="position" size="1">
+            <option value="center">Center</option>
+            <option value="guard">Guard</option>
+            <option value="powerforward">Power Forward</option>
+            <option selected value="wing">Wing</option>
+            <option value="smallforward">Small Forward</option>
+        </select><br>
+        
+        Rückennummer
+        <input type="number" name="number"><br>
+        
+        Geburtsjahr
+        <input type="number" name="jahr"><br>
+        
+        Favorit markieren<br>
+        <input type="checkbox" name="favorit"><br> 
+        
+        
+        <button name="Senden" type="submit">Senden</button>
+    </form>
+    
+
+</body>
 </html>
