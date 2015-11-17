@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="de">
 
@@ -104,3 +105,65 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+	<html lang="de">
+		<header>
+			<meta charset="UTF-8">
+			<title>Spieler anlegen</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		</header>
+
+		<body>
+			<diV id="links" class="aussen"></diV>
+			
+			<div id="mitte">
+				<h1 id="ueberschriftplayer">Spieler anlegen</h1>
+
+				<form action="http://martinakraus.net/createPlayer.php" method="GET">
+
+				<div id="bezeichnung">
+					<p>Name</p>
+					<p>Vorname </p>
+					<p>Verein</p>
+					<p>Coach</p>
+					<p>Assistentcoach</p>
+					<p>Trickotnummer</p>
+					<p>Jahrgang</p>
+					<p>Aktiv</p>
+					<p>Position</p>
+				</div>
+
+				<div id="felder">
+					<input type="text" name="name">
+					<input type="text" name="vorname">
+					<input type="text" name="verein">
+					<input type="text" name="coach">
+					<input type="text" name="assistentcoach">
+					<input type="number" name="trickotnummer">
+					<input type="number" name="jahrgang">
+					<input type="checkbox" name="ja">Ja<input type="checkbox" name="nein" checked="checked"/>Nein<br/>
+					<select>
+						<option value="center">Center</option>
+						<option value="guard">Guard</option>
+						<option value="powerForward">Power Forward</option>
+						<option value="wing" selected="selected">Wing</option>
+						<option value="smallForward">Small Forward</option>
+					</select>
+				</div>
+
+				<div id="favorit">
+					<p>Als favorit markieren</p>
+					<input type="checkbox" name="alsFavoritMarkieren">
+				</div>
+
+				<div id="submitButton">
+					<button type="submit" name="anlegen">Anlegen</button>
+				</div>
+			</div>
+			</form>
+
+			<div id="rechts" class="aussen"></div>
+		</body>
+	</html>
+>>>>>>> origin/master
