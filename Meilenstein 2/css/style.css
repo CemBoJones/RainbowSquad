@@ -15,6 +15,19 @@ td {
 }
 
 .inhalt {
+    float: left;
+    background-color: rgb(153, 217, 234);
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 555px;
+}
+
+.inhaltfavorit {
+    float: right;
     background-color: rgb(153, 217, 234);
     height: 100%;
     padding-left: 20px;
