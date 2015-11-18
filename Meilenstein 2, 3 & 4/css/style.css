@@ -1,89 +1,106 @@
-html{
-	margin: 0;
-	height: 100%;
-	font-family: sans-serif;
-	color: black;
-	background-color: rgb(153,217,234);
+html {
+    margin: 0;
+    height: 100%;
 }
 
-body{
- 	margin: 0;
- 	height: 100%;
- }
+body {
+    margin: 0;
+    background-color: rgb(0, 162, 232);
+    height: 100%;
+}
 
-h1{
- 	text-align: center;
- }
+.inhalt {
+    background-color: rgb(153, 217, 234);
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 800px;
+    width: 60%;
+}
+.inhaltStatic{
+    width:800px;
+    margin: 0 auto;
+}
+.contentL{
+    width: 50%;
+    float: left;
+}
+.contentR{
+    width: 50%;
+    float: right;
+}
+label {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    display: inline-block;
+    width: 160px;
+    padding: 10px 0px;
+}
 
-.aussen{
- 	float: left;
- 	width: 20%;
- 	height: 100%;
- 	background-color: rgb(0,162,232);
- }
+input{
+    width: 180px;
+}
 
-#mitte{
- 	float: left;
- 	width: 60%;
- 	min-width: 173px;
- }
+.labelFav{
+    width: 200px;
+}
+.inputFav{
+    width: auto;
+    display: block;
+}
 
-#ueberschrifthome{
- 	font-size: 22px;
- }
+.inputAct{
+    width: auto;
+}
+.labelAct{
+    width: 80px;
+}
 
-#buchstaben{
- 	color: rgb(136,0,21);
- }
+h1 {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: rgb(75, 47, 37);
+    text-align: center;
+    padding-top: 20px;
+}
 
-.zentriert{
- 	display: block;
- 	margin: 50px auto 50px;
+.home {
+    color: black;
+    font-size: 22px;
+}
 
- }
+.h1Red {
+    color: rgb(136, 0, 21);
+}
 
-#navigation{
- 	width: 200px;
- 	height: 180px;
- 	border: 3px solid;
- 	border-color: rgb(63,72,204);
- }
+.centered {
+    display: block;
+    margin: 20px auto;
+}
 
 a{
- 	line-height: 60px;
- 	width: 200px;
- 	background-color: rgb(0,162,232);
- 	display: inline-block;
- 	text-decoration: none;
- 	font-size: 18px;
- 	font-weight: bold;
- 	text-align: center;
- 	color: black;
- }
+    background-color: rgb(0,162,232);
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 600;
+   text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 256px;
+}
 
 a:hover{
- 	background-color: rgb(63,72,204)
- }
+    background-color: rgb(63,72,204);
+}
 
-#ueberschriftplayer{
- 	font-size: 24px;
- 	color: rgb(75 47 37);
- }
-
- .inhalt{
- 	display: block;
- 	margin: 50px 20px 50px;
- 	float: left;
- 	display: inline-block;
- 	line-height: 2.5;
- }
-
- #submitButton{
- 	clear: both;
- 	display: block;
- 	margin: 50px 20px 50px;
- }
-
- input[type=number] {
-   -moz-appearance: textfield;
+.buttonDiv{
+    border: 3px solid rgb(63,72,204);
+    width: 296px;
+    text-align: center;
 }

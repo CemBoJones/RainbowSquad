@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-	<html lang="de">
-		<header>
-    			<meta charset="UTF-8">
-    			<title>Spieler anlegen</title>
-    			<link rel="stylesheet" type="text/css" href="css/style.css"/>
-    		</header>
+<html lang="de">
 
-		<body>
-			<diV id="links" class="aussen"></diV>
+<head>
+    <meta charset="UTF-8">
+    <title>Spieler anlegen</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/validation.js"></script>
+</head>
 
-			<div id="mitte">
-    				<h1 id="ueberschriftplayer">Spieler anlegen</h1>
+<body>
+    <div class="inhalt">
+        <div class="inhaltStatic">
+            <h1>Spieler anlegen</h1>
+            <form action="http://martinakraus.net/createPlayer.php" method="get" name="player_entry">
 
-    				<form action="http://martinakraus.net/createPlayer.php" method="GET">
+                <div class="contentL">
+                    <label id="vorname">Vorname</label>
+                    <input type="text" name="vorname">
 
-    				    <div class="inhalt">
-    					   Name<br/>
-    					   Vorname<br/>
-    					   Verein<br/>
-    					   Coach<br/>
-    					   Assistentcoach<br/>
-    					   Trickotnummer<br/>
-    					   Jahrgang<br/>
-    					   Aktiv<br/>
-    					   Position<br/>
-    				    </div>
+                    <label id="name">Nachname</label>
+                    <input type="text" name="name">
 
-    				    <div class="inhalt">
-    					   <input type="text" name="name"><br/>
-    					   <input type="text" name="vorname"><br/>
-    					   <input type="text" name="verein"><br>
-    					   <input type="text" name="coach"><br/>
-    					   <input type="text" name="assistentcoach"><br/>
-    					   <input type="number" name="trickotnummer"><br/>
-    					   <input type="number" name="jahrgang"><br/>
-    					   <input type="checkbox" name="ja">Ja<input type="checkbox" name="nein" checked="checked"/>Nein<br/>
-    					   <select>
-    						  <option value="center">Center</option>
-    						  <option value="guard">Guard</option>
-    						  <option value="powerForward">Power Forward</option>
-    						  <option value="wing" selected="selected">Wing</option>
-    						  <option value="smallForward">Small Forward</option>
-    					   </select>
-    				    </div>
+                    <label id="verein">Verein</label>
+                    <input type="text" name="verein">
 
-    				    <div class="inhalt">
-    					   Als favorit markieren<br/>
-    					   <input type="checkbox" name="alsFavoritMarkieren">
-    				    </div>
+                    <label id="hcoach">Headcoach</label>
+                    <input type="text" name="hcoach">
 
-    				    <div id="submitButton" >
-    					   <button type="submit" name="anlegen">Anlegen</button>
-    				    </div>
-    			</div>
-			</form>
+                    <label id="acoach">Assistant Coach</label>
+                    <input type="text" name="acoach">
 
-			<div id="rechts" class="aussen"></div>
-		</body>
-	</html>
+                    <label>Aktiv</label>
+                    <label class="labelAct" id="aktiv">
+                        <input class="inputAct" type="checkbox" name="aktiv" value="ja"> Ja
+                    </label>
+                    <label class="labelAct" id="aktiv">
+                        <input class="inputAct" type="checkbox" name="aktiv" value="nein" checked> Nein
+                    </label>
 
+                    <label id="position">Position</label>
+                    <select name="position" size="1">
+                        <option value="center">Center</option>
+                        <option value="guard">Guard</option>
+                        <option value="powerforward">Power Forward</option>
+                        <option selected value="wing">Wing</option>
+                        <option value="smallforward">Small Forward</option>
+                    </select>
+
+                    <label id="number">Rückennummer</label>
+
+                    <input type="number" name="number">
+
+                    <label id="jahr">Geburtsjahr</label>
+
+                    <input type="number" name="jahr">
+                </div>
+                <div class="contentR">
+                    <label class="labelFav" id="favorit">
+                        Als Favorit markieren
+                        <input class="inputFav" type="checkbox" name="favorit">
+                    </label>
+
+                </div>
+                <button name="Senden" type="submit" onclick="return validation();">Senden</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
