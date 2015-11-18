@@ -25,6 +25,7 @@ h1{
 #mitte{
  	float: left;
  	width: 60%;
+ 	min-width: 173px;
  }
 
 #ueberschrifthome{
