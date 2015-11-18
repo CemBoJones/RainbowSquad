@@ -71,25 +71,18 @@ a:hover{
 
  .inhalt{
  	display: block;
- }
-
-#bezeichnung{
+ 	margin: 50px 20px 50px;
  	float: left;
  	display: inline-block;
+ 	line-height: 2.5;
  }
 
- form{
- 	padding-bottom: 3px;
- 	padding-top: 3px;
+ #submitButton{
+ 	clear: both;
+ 	display: block;
+ 	margin: 50px 20px 50px;
  }
 
-#felder{
- 	float: left;
- 	display: inline-block;
- 	line-height: 10px;
- }
-
-#favorit{
- 	float: left;
- 	display:inline-block;
- }
+ input[type=number] {
+   -moz-appearance: textfield;
+}
