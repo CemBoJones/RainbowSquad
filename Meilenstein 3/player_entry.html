@@ -4,6 +4,7 @@
     			<meta charset="UTF-8">
     			<title>Spieler anlegen</title>
     			<link rel="stylesheet" type="text/css" href="css/style.css"/>
+                <script type="text/javascript" src="javascript/pruefung.js"></script>
     		</header>
 
 		<body>
@@ -27,13 +28,13 @@
     				    </div>
 
     				    <div class="inhalt">
-    					   <input type="text" name="name"><br/>
-    					   <input type="text" name="vorname"><br/>
-    					   <input type="text" name="verein"><br>
-    					   <input type="text" name="coach"><br/>
-    					   <input type="text" name="assistentcoach"><br/>
-    					   <input type="number" name="trickotnummer"><br/>
-    					   <input type="number" name="jahrgang"><br/>
+    					   <input id="name" type="text" name="name"><br/>
+    					   <input id="vorname" type="text" name="vorname"><br/>
+    					   <input id="verein" type="text" name="verein"><br>
+    					   <input id="coach" type="text" name="coach"><br/>
+    					   <input id="assistentcoach" type="text" name="assistentcoach"><br/>
+    					   <input id="trickotnummer" type="number" name="trickotnummer"><br/>
+    					   <input id="jahrgang" type="number" name="jahrgang"><br/>
     					   <input type="checkbox" name="ja">Ja<input type="checkbox" name="nein" checked="checked"/>Nein<br/>
     					   <select>
     						  <option value="center">Center</option>
@@ -49,7 +50,7 @@
     					   <input type="checkbox" name="alsFavoritMarkieren">
     				    </div>
 
-    				    <div id="submitButton" >
+    				    <div id="submitButton" onclick="Pruefe()">
     					   <button type="submit" name="anlegen">Anlegen</button>
     				    </div>
     			</div>
