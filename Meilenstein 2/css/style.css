@@ -69,14 +69,27 @@ a:hover{
  	color: rgb(75 47 37);
  }
 
+ .inhalt{
+ 	display: block;
+ }
+
 #bezeichnung{
  	float: left;
+ 	display: inline-block;
+ }
+
+ form{
+ 	padding-bottom: 3px;
+ 	padding-top: 3px;
  }
 
 #felder{
  	float: left;
+ 	display: inline-block;
+ 	line-height: 10px;
  }
 
 #favorit{
  	float: left;
+ 	display:inline-block;
  }
