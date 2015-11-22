@@ -15,31 +15,31 @@
             <form action="http://martinakraus.net/createPlayer.php" method="get" name="player_entry">
 
                 <div class="contentL">
-                    <label id="vorname">Vorname</label>
-                    <input type="text" name="vorname">
+                    <label for="vorname">Vorname</label>
+                    <input type="text" name="vorname" id="vorname">
 
-                    <label id="name">Nachname</label>
-                    <input type="text" name="name">
+                    <label for="name">Nachname</label>
+                    <input type="text" name="name" id="name">
 
-                    <label id="verein">Verein</label>
-                    <input type="text" name="verein">
+                    <label for="verein">Verein</label>
+                    <input type="text" name="verein" id=verein>
 
-                    <label id="hcoach">Headcoach</label>
-                    <input type="text" name="hcoach">
+                    <label for="hcoach">Headcoach</label>
+                    <input type="text" name="hcoach" id="hcoach">
 
-                    <label id="acoach">Assistant Coach</label>
-                    <input type="text" name="acoach">
+                    <label for="acoach">Assistant Coach</label>
+                    <input type="text" name="acoach" id="acoach">
 
                     <label>Aktiv</label>
-                    <label class="labelAct" id="aktiv">
-                        <input class="inputAct" type="checkbox" name="aktiv" value="ja"> Ja
+                    <label class="labelAct" for="aktivJa">
+                        <input class="inputAct" type="checkbox" name="aktiv" value="ja" id="aktivJa"> Ja
                     </label>
-                    <label class="labelAct" id="aktiv">
-                        <input class="inputAct" type="checkbox" name="aktiv" value="nein" checked> Nein
+                    <label class="labelAct" for="aktivNein">
+                        <input class="inputAct" type="checkbox" name="aktiv" value="nein" checked id="aktivNein"> Nein
                     </label>
 
-                    <label id="position">Position</label>
-                    <select name="position" size="1">
+                    <label for="position">Position</label>
+                    <select name="position" size="1" id="position">
                         <option value="center">Center</option>
                         <option value="guard">Guard</option>
                         <option value="powerforward">Power Forward</option>
@@ -47,18 +47,18 @@
                         <option value="smallforward">Small Forward</option>
                     </select>
 
-                    <label id="number">Rückennummer</label>
+                    <label for="number">Rückennummer</label>
 
-                    <input type="number" name="number">
+                    <input type="number" name="number" id="number">
 
-                    <label id="jahr">Geburtsjahr</label>
+                    <label for="jahr">Geburtsjahr</label>
 
-                    <input type="number" name="jahr">
+                    <input type="number" name="jahr" id="jahr">
                 </div>
                 <div class="contentR">
-                    <label class="labelFav" id="favorit">
+                    <label class="labelFav" for="favorit">
                         Als Favorit markieren
-                        <input class="inputFav" type="checkbox" name="favorit">
+                        <input class="inputFav" type="checkbox" name="favorit" id="favorit">
                     </label>
 
                 </div>

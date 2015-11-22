@@ -12,15 +12,8 @@ xmlhttp.send();
 
 function myFunction(arr) {
     var tblBody = document.createElement("tbody");
-
-    // creating all hcells
     for (i = 0; i < arr.length; i++) {
-        // creates a table row
         var row = document.createElement("tr");
-
-        // Create a <td> element and a text node, make the text
-        // node the contents of the <td>, and put the <td> at
-        // the end of the table row
         var cell1 = document.createElement("td");
         var cell2 = document.createElement("td");
         var cell3 = document.createElement("td");
@@ -61,14 +54,11 @@ function myFunction(arr) {
         row.appendChild(cell7);
         row.appendChild(cell8);
 
-        //add Class isFav or isNotFav
-        if(arr[i]["isFavorite"]){
+        if (arr[i]["isFavorite"]) {
             row.classList.add("isFav");
-        }else{
+        } else {
             row.classList.add("isNotFav");
         }
-        
-        // add the row to the end of the table body
         tblBody.appendChild(row);
     }
     return tblBody;
@@ -84,19 +74,19 @@ document.getElementById("favorite").onclick = function () {
 
 function select(tab) {
     var playerVisible = document.getElementsByClassName("isNotFav");
-    
+
     if (tab == "all") {
         document.getElementById("all").classList.add("selected");
         document.getElementById("favorite").classList.remove("selected");
-        
-        for(var i=0; i < playerVisible.length; i++){
+
+        for (var i = 0; i < playerVisible.length; i++) {
             playerVisible[i].classList.remove("invisible");
         }
     } else {
         document.getElementById("favorite").classList.add("selected");
         document.getElementById("all").classList.remove("selected");
-        
-        for(var i=0; i < playerVisible.length; i++){
+
+        for (var i = 0; i < playerVisible.length; i++) {
             playerVisible[i].classList.add("invisible");
         }
     }
