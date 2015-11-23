@@ -1,6 +1,16 @@
+/**
+ * Neues XMLHttpRequest
+**/
 var xmlhttp = new XMLHttpRequest();
+
+/**
+ * JSON-Datei mit Spieler
+**/
 var url = "js/data.json";
 
+/**
+ * Funktion zum Einlesen der JSON-Datei
+**/
 xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
         var myArr = JSON.parse(xmlhttp.responseText);
@@ -10,8 +20,13 @@ xmlhttp.onreadystatechange = function () {
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
 
+/**
+ * Funktion zum Erstellen der Tabelle
+**/
 function myFunction(arr) {
     var tblBody = document.createElement("tbody");
+
+    //Erstellen der Tabelle, Zeile für Zeile
     for (i = 0; i < arr.length; i++) {
         var row = document.createElement("tr");
         var cell1 = document.createElement("td");
@@ -37,6 +52,7 @@ function myFunction(arr) {
             cellIsActive = document.createTextNode("Ja");
         }
 
+        //Befüllen der einzelnen Zellen in der Reihe
         cell1.appendChild(cellName);
         cell2.appendChild(cellTeam);
         cell3.appendChild(cellHcoach);
@@ -64,17 +80,27 @@ function myFunction(arr) {
     return tblBody;
 }
 
+/**
+ * Beim klicken des Tabs "Alle Spieler" soll die Funktion select(tab) aufgerufen werden
+**/
 document.getElementById("all").onclick = function () {
     select("all");
 };
 
+/**
+ * Beim klicken des Tabs "Meine Favoriten" soll die Funktion select(tab) aufgerufen werden
+**/
 document.getElementById("favorite").onclick = function () {
     select("favorite");
 };
 
+/**
+ * Funktion zum wechseln der Tabellen der beiden Tabs 
+**/
 function select(tab) {
     var playerVisible = document.getElementsByClassName("isNotFav");
 
+    //Beim klicken des Tabs "Alle Spieler"
     if (tab == "all") {
         document.getElementById("all").classList.add("selected");
         document.getElementById("favorite").classList.remove("selected");
@@ -82,6 +108,8 @@ function select(tab) {
         for (var i = 0; i < playerVisible.length; i++) {
             playerVisible[i].classList.remove("invisible");
         }
+
+    //Beim klicken des Tabs "Meine Favoriten"
     } else {
         document.getElementById("favorite").classList.add("selected");
         document.getElementById("all").classList.remove("selected");
