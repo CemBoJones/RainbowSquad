@@ -14,7 +14,7 @@ var url = "js/data.json";
 xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
         var myArr = JSON.parse(xmlhttp.responseText);
-        document.getElementById("playerTable").appendChild(myFunction(myArr));
+        document.getElementById("playerTable").appendChild(createTable(myArr));
     }
 };
 xmlhttp.open("GET", url, true);
@@ -23,7 +23,7 @@ xmlhttp.send();
 /**
  * Funktion zum Erstellen der Tabelle
 **/
-function myFunction(arr) {
+function createTable(arr) {
     var tblBody = document.createElement("tbody");
 
     //Erstellen der Tabelle, Zeile für Zeile
