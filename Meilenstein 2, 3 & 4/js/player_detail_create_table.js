@@ -46,6 +46,7 @@ function myFunction(arr) {
         var cellNumber = document.createTextNode(arr[i].number);
         var cellYear = document.createTextNode(arr[i].year);
 
+        //Wahrheitswert zur Aktivität des Spielers wird in Ja oder Nein
         if (cellIsActive.nodeValue == "false") {
             cellIsActive = document.createTextNode("Nein");
         } else {
@@ -70,6 +71,7 @@ function myFunction(arr) {
         row.appendChild(cell7);
         row.appendChild(cell8);
 
+        //Kennzeichnet Favoriten und Nicht-Favoriten zum späteren Einordnen in die richtige Tabelle
         if (arr[i]["isFavorite"]) {
             row.classList.add("isFav");
         } else {
