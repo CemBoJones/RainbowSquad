@@ -1,27 +1,47 @@
+/**
+ * 
+ */
 var http = require('http');
+
+/**
+ * 
+ */
 var querystring = require('querystring');
+
+/**
+ * 
+ */
 var fs = require('fs');
 
+/**
+ * 
+ */
+var os = require("os");
 
+//
 http.createServer(function (request, response){
 	console.log('User connected to Server');
 
+	/**
+ 	* 
+ 	*/
 	var requestQueryParameters;
+
+	/**
+ 	* 
+ 	*/
 	var parameterList;
 
+	//
 	requestQueryParameters = querystring.parse(request.url.replace(/^.*\?/, ''));
 
+	//
 	parameterList = requestQueryParameters['vorname'] + ' ' + requestQueryParameters['name'] + ', ' 
 	+ requestQueryParameters['jahr'] + ', ' + requestQueryParameters['hcoach'] + ', ' 
 	+ requestQueryParameters['acoach'] + ', ' + requestQueryParameters['position'] + ', ' 
-	+ requestQueryParameters['number'];
-	
-	/*parameterList[1] = requestQueryParameters['jahr'];
-	parameterList[2] = requestQueryParameters['hcoach'];
-	parameterList[3] = requestQueryParameters['acoach'];
-	parameterList[4] = requestQueryParameters['position'];
-	parameterList[5] = requestQueryParameters['number'];*/
+	+ requestQueryParameters['number'] + os.EOL;
 
+	//
 	fs.appendFile('form.txt', parameterList);
 
 	response.writeHead(200, {'Content-Type': 'text/plain'});
