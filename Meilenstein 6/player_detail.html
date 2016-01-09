@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spieler anlegen</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+    <script language="javascript" type="text/javascript" src="js/player_detail_create_table.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Meine Spieler</h1>
+        <div class="contentStatic">
+            <table id="playerTable">
+                <tr>
+                    <td colspan="4" id="all" class="tab selected" onclick="select(id)">Alle Spieler</td>
+                    <td colspan="4" id="favorite" class="tab" onclick="select(id)">Meine Favoriten</td>
+
+                </tr>
+                <tr>
+                    <th>Spielername</th>
+                    <th>Verein</th>
+                    <th>Headcoach</th>
+                    <th>Assistentcoach</th>
+                    <th>Position</th>
+                    <th>Aktiv</th>
+                    <th>Rückennummer</th>
+                    <th>Geburtsjahr</th>
+                </tr>
+            </table>
+        </div>
+    <a href="home.html" class="backButton">Zurück</a>
+    </div>
+</body>
+
+</html>
