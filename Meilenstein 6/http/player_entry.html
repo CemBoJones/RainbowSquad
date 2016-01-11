@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spieler anlegen</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/validation.js"></script>
+        <script src="js/player_entry_create_player.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="contentStatic">
+            <h1>Spieler anlegen</h1>
+            <form action="http://127.0.0.1:3000" method="put" name="player_entry">
+
+                <div class="contentL">
+                    <label for="vorname">Vorname</label>
+                    <input type="text" name="vorname" id="vorname">
+
+                    <label for="name">Nachname</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="verein">Verein</label>
+                    <input type="text" name="verein" id=verein>
+
+                    <label for="hcoach">Headcoach</label>
+                    <input type="text" name="hcoach" id="hcoach">
+
+                    <label for="acoach">Assistant Coach</label>
+                    <input type="text" name="acoach" id="acoach">
+
+                    <label>Aktiv</label>
+                    <label class="labelAct" for="aktivJa">
+                        <input class="inputAct" type="checkbox" name="aktiv" value="ja" id="aktivJa"> Ja
+                    </label>
+                    <label class="labelAct" for="aktivNein">
+                        <input class="inputAct" type="checkbox" name="aktiv" value="nein" checked id="aktivNein"> Nein
+                    </label>
+
+                    <label for="position">Position</label>
+                    <select name="position" size="1" id="position">
+                        <option value="center">Center</option>
+                        <option value="guard">Guard</option>
+                        <option value="powerforward">Power Forward</option>
+                        <option selected value="wing">Wing</option>
+                        <option value="smallforward">Small Forward</option>
+                    </select>
+
+                    <label for="number">Rückennummer</label>
+
+                    <input type="number" name="number" id="number">
+
+                    <label for="jahr">Geburtsjahr</label>
+
+                    <input type="number" name="jahr" id="jahr">
+                </div>
+                <div class="contentR">
+                    <label class="labelFav" for="favorit">
+                        Als Favorit markieren
+                        <input class="inputFav" type="checkbox" name="favorit" id="favorit">
+                    </label>
+
+                </div>
+                <button id="anlegen" name="Senden" class="submitButton" type="button" onclick="submitform(validation())">Senden</button>
+            </form>
+        </div>
+        <a href="home.html" class="backButton">Zurück</a>
+    </div>
+</body>
+
+</html>
